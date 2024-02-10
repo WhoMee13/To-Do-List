@@ -30,17 +30,3 @@ function addTask(newTask){
     li.appendChild(btns)
     display.appendChild(li); 
 }
-function getLocalStorage(){
-
-}
-function  saveToLocalStorage(){
-    localStorage.clear();
-    const li=document.querySelectorAll('li');
-    li.forEach((value,index)=>{
-        let text=value.innerText;
-        text=text.substring(0,text.length-3)
-        localStorage.setItem(`task${index}`,text);
-    });
-}
-localStorage.setItem("done",[1,2,3])
-console.log(localStorage.getItem("try"))

@@ -52,6 +52,7 @@ ul li span button{
 }
 .toggleLinethrough{
     text-decoration: line-through !important;
+    color:grey;
 }
 h1{
 font-size: 60px;
